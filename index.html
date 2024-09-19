@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>투어지</title>
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="img/main/favicon.png" type="image/x-icon">
+
+  <!-- font -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- css -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/common.css">
+
+  <!-- js -->
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</head>
+
+<body>
+  <div id="wrap">
+    <!--header-->
+    <header id="header">
+      <div class="inner">
+        <h1><a href="index.html">투어지</a></h1>
+
+        <nav>
+          <!--gnb-->
+          <ul class="gnb">
+            <li><a href="#service">서비스</a>
+            </li>
+            <li><a href="#use">이용 방법</a>
+            </li>
+            <li><a href="#download">다운로드</a>
+            </li>
+            <li>
+              <ul class="gnb_sns">
+                <li class="insta"><a href="https://www.instagram.com/go_tourzy/"><img src="img/main/icon_insta_w.png"
+                      alt=""></a></li>
+                <li class="youtube"><a href="https://www.youtube.com/channel/UC9_53dX7oA5G5xKwa1kf5nA"><img
+                      src="img/main/icon_youtube_w.png" alt=""></a></li>
+                <li class="facebook"><a
+                    href="https://www.facebook.com/story.php/?story_fbid=526467029662522&id=100068976874082"><img
+                      src="img/main/icon_facebook_w.png" alt=""></a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <div class="mgnb_wrap">
+            <ul class="mgnb">
+              <li><a href="#service">서비스</a></li>
+              <li><a href="#use">이용방법</a></li>
+              <li><a href="#download">다운로드</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="mgnb_dim"></div>
+        <div class="util">
+          <button class="btn_ham"><img src="img/main/icon_ham.png" alt="전체메뉴"> 전체메뉴 보기</button>
+          <button class="mgnb_close"><img src="img/main/icon_close.png" alt="닫기"> 전체메뉴 닫기</button>
+        </div>
+      </div><!--inner-->
+
+
+    </header>
+    <!--main-->
+    <main id="main">
+      <!--banner-->
+      <section id="banner">
+        <h2>banner</h2>
+        <video autoplay muted loop id="video">
+          <source src='video/tourzy_30s.mp4' type='video/mp4'>
+        </video>
+        <div class="inner">
+          <div id="progress-bar-container">
+            <div id="progress-bar"></div>
+          </div>
+
+          <div class="scroll">
+            <div>SCROLL</div>
+            <div class="bar">
+              <span class="ball"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="service">
+        <div class="inner">
+          <div class="service_area">
+            <div class="service_img">
+              <img src="img/main/service.png" alt="서비스 이미지">
+            </div>
+            <ul class="service_ul">
+              <li data-aos="fade-right">
+                <h2><span>투어지바이크</span>로
+                  가까운 거리는 더 가깝게</h2>
+                <p>나를 알아주는 공유바이크로 내가 원하는 곳에서
+                  원하는 만큼 빠르고 편리한 이동을 제공합니다.
+                </p>
+              </li>
+              <li data-aos="fade-left">
+                <h2><span>마이크로카</span>로
+                  부산여행을 더욱 재밌게</h2>
+                <p>이동시간 또한 새로운 경험의 일부가 될 수 있도록
+                  마이크로카가 편의와 즐거움을 제공합니다.
+                </p>
+              </li>
+            </ul>
+            <div class="m_service_area">
+              <div class="inner">
+                <ul class="m_service_ul">
+                  <li class="m_service_list01">
+                    <div class="txt_box">
+                      <h2><span>투어지바이크</span>로<br class="mservice_br">
+                        가까운 거리는 더 가깝게</h2>
+                      <p>나를 알아주는 공유바이크로 내가 원하는 곳에서
+                        원하는 만큼 빠르고 편리한 이동을 제공합니다.
+                      </p>
+                    </div><!--.txt_box-->
+                    <div class="img_box">
+                      <img class="t_mockup_img" src="img/main/mockup_bike.png" alt="바이크 목업 사진">
+                      <img class="m_mockup_img" src="img/main/m_mockup_bike.png" alt="모바일 바이크 목업">
+                    </div><!--.img_box-->
+                  </li>
+
+                  <li class="m_service_list02">
+                    <div class="txt_box">
+                      <h2><span>마이크로카</span>로<br class="mservice_br">
+                        부산여행을 더욱 재밌게</h2>
+                      <p>이동시간 또한 새로운 경험의 일부가 될 수 있도록
+                        마이크로카가 편의와 즐거움을 제공합니다.
+                      </p>
+                    </div><!--.txt_box-->
+                    <div class="img_box">
+                      <img class="t_mockup_img" src="img/main/mockup_car.png" alt="마이크로카 목업 사진">
+                      <img class="m_mockup_img" src="img/main/m_mockup_car.png.png" alt="모바일 마이크로카 목업">
+                    </div><!--.img_box-->
+                  </li>
+                </ul>
+              </div><!--.inner-->
+            </div><!--.m_service_area-->
+          </div><!--.service_area-->
+        </div>
+
+        <div class="keyword">
+          <ul>
+            <li>
+              <div data-aos="fade-up" data-aos-duration="1500">
+                <span>부산대표 공유 모빌리티</span>
+                <p>글로벌 관광도시 '부산'을 누리는
+                  부산 대표 공유 모빌리티 투어지
+                </p>
+              </div>
+            </li>
+            <li>
+              <div data-aos="fade-up" data-aos-duration="2000">
+                <span>e-모빌리티</span>
+                <p>친환경 동력을 이용하는 'e-모빌리티'로
+                  우리 지구를 지키는 투어지
+                </p>
+              </div>
+            </li>
+            <li>
+              <div data-aos="fade-up" data-aos-duration="2500">
+                <span>부산지역화폐 동백전</span>
+                <p>앱과 동백전을 연결하여 더욱 쉽고
+                  빠르게 만날 수 있는 투어지
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="use">
+        <h2>use</h2>
+        <div class="mobility_list">
+          <ul class="mobility_name">
+            <li class="m1">마이크로카</li>
+            <li class="m2">투어지바이크</li>
+          </ul>
+          <div class="mobility_con">
+            <div class="swiper mob_list list_car">
+              <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                  <div class="use_imgBox">
+                    <img src="img/main/use1_car.png" alt="사용과정">
+                  </div>
+                  <div>
+                    <span>#쉽게 찾고</span>
+                    <p>가까운 자동차 찾기로 내 주변 기기를
+                      더욱 빠르게 찾을 수 있어요.</p>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="use_imgBox">
+                    <img src="img/main/use2_car.png" alt="사용과정">
+                  </div>
+                  <div>
+                    <span>#바로 타고</span>
+                    <p>원하는 서비스 선택 후 등록한 카드로 빠르게 결제!
+                      차량체크 후 스마트키를 이용해 바로 탈 수 있어요.
+                    </p>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="use_imgBox">
+                    <img src="img/main/use3_car.png" alt="사용과정">
+                  </div>
+                  <div>
+                    <span>#반납 하고</span>
+                    <p>원하는 스테이션에 안전하게 주차 후
+                      사진 촬영만 하면 끝!</p>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="use_imgBox">
+                    <img src="img/main/use4_car.png" alt="사용과정">
+                  </div>
+                  <div>
+                    <span>#혜택 받고</span>
+                    <p>구독권으로 이용료 할인 받고
+                      장기대여도 문제없이!</p>
+                  </div>
+                </li>
+              </ul>
+              <div class="swiper-pagination"></div>
+            </div>
+            <div class="swiper mob_list list_bike">
+              <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                  <div class="use_imgBox">
+                    <img src="img/main/use1_bike.png" alt="사용과정">
+                  </div>
+                  <div>
+                    <span>#쉽게 찾고</span>
+                    <p>가까운 자전거 찾기로 내 주변 기기를
+                      더욱 빠르게 찾을 수 있어요.</p>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="use_imgBox">
+                    <img src="img/main/use2_bike.png" alt="사용과정">
+                  </div>
+                  <div>
+                    <span>#바로 타고</span>
+                    <p>QR코드만 스캔하면 잠금장치 해제 완료!
+                      해제 즉시 이용할 수 있어요.
+                    </p>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="use_imgBox">
+                    <img src="img/main/use3_bike.png" alt="사용과정">
+                  </div>
+                  <div>
+                    <span>#반납 하고</span>
+                    <p>원하는 장소에 안전하게 주차 후
+                      사진 촬영만 하면 끝!</p>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="use_imgBox">
+                    <img src="img/main/use4_bike.png" alt="사용과정">
+                  </div>
+                  <div>
+                    <span>#혜택 받고</span>
+                    <p>무제한 잠금해제 패스로
+                      잠금해제 비용을 아껴보세요!</p>
+                  </div>
+                </li>
+              </ul>
+              <div class="swiper-pagination page_bike"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="download">
+        <div class="inner">
+          <h2><img src="img/main/tourzy_new_logo.png" alt="tourzy_logo"></h2>
+          <span>투어지와 함께 누려보는 새로운 이동수단</span>
+          <p>나와 지구를 위해 지금 바로 시작해보세요.</p>
+          <div class="download_btn">
+            <a
+              href="https://apps.apple.com/kr/app/%ED%88%AC%EC%96%B4%EC%A7%80-%EB%9D%BC%EC%8A%A4%ED%8A%B8-%EB%A7%88%EC%9D%BC%EC%9D%98-%EB%89%B4%EC%9B%A8%EC%9D%B4%EB%B8%8C/id1581536662">
+              <div class="btn_apple">
+                <img src="img/main/apple.png" alt="apple_btn">
+                <b>App
+                  Store</b>
+              </div>
+            </a>
+            <a href="https://play.google.com/store/search?q=%ED%88%AC%EC%96%B4%EC%A7%80&c=apps&hl=ko">
+              <div class="btn_google">
+                <img src="img/main/google.png" alt="google_btn">
+                <b>Google Play</b>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--footer-->
+    <footer id="footer">
+      <div class="inner">
+        <div class="footer_sns">
+          <h2><img src="img/main/tourzy_new_logo.png" alt="tourzy_logo"></h2>
+          <ul>
+            <li><a href="https://www.instagram.com/go_tourzy/"><img src="img/main/icon_insta.png" alt="insta"></a>
+            </li>
+            <li><a href="https://www.youtube.com/channel/UC9_53dX7oA5G5xKwa1kf5nA"><img src="img/main/icon_youtube.png"
+                  alt="youtube"></a></li>
+            <li><a href="https://www.facebook.com/story.php/?story_fbid=526467029662522&id=100068976874082"><img
+                  src="img/main/icon_facebook.png" alt="facebook"></a></li>
+          </ul>
+        </div>
+        <ul class="footer_link">
+          <li><a href="#">회사소개</a></li>
+          <li><a href="#">제휴안내</a></li>
+          <li><a href="#">회원이용약관</a></li>
+          <li><a href="#">개인정보처리방침</a></li>
+        </ul>
+        <div class="copy">
+          Copyright &copy; 2024 - Tourzy by (주)투어스태프
+          <a href="#">사업자정보확인</a>
+        </div>
+      </div>
+    </footer>
+
+    <button class="gotop"><img src="img/main/icon_gotop_w.png" alt="맨위로">맨위로</button>
+  </div><!--wrap-->
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1500, });
+  </script>
+</body>
+
+</html>
