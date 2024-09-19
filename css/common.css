@@ -1,0 +1,323 @@
+@charset "utf-8";
+
+:root {
+  --main-font: "Noto Sans KR", sans-serif;
+  --main-color: #FF7500;
+}
+
+body {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #000;
+  line-height: 1.5;
+  font-family: var(--main-font);
+  overflow-x: hidden;
+}
+
+/* header */
+#header {
+  transition: all 0.5s;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  z-index: 100;
+  padding: 24px;
+}
+
+header h1 a {
+  display: block;
+  font-size: 0;
+  background: url(../img/main/tourzy_new_logo.png) no-repeat center / 100%;
+  width: 139px;
+  height: 47px;
+}
+
+#header .inner {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* gnb */
+#header .gnb {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+#header .gnb li:hover a {
+  color: #FF7500;
+}
+
+#header .gnb li a {
+  font-weight: 600;
+  color: #fff;
+  transition: all 0.5s;
+}
+
+.gnb_sns {
+  display: flex;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.gnb_sns .insta {
+  width: 30px;
+  height: 30px;
+}
+
+.gnb_sns .youtube {
+  width: 30px;
+  height: 30px;
+}
+
+.gnb_sns .facebook {
+  width: 30px;
+  height: 30px;
+}
+
+.gnb_sns li a img {
+  width: 100%;
+  height: 100%;
+}
+
+#header .util {
+  display: none;
+  width: 24px;
+  height: 24px;
+}
+
+#header .util button img {
+  vertical-align: bottom;
+}
+
+#header .util .btn_ham {
+  width: 24px;
+  height: 24px;
+  font-size: 0;
+  border: 0;
+  cursor: pointer;
+}
+
+#header .util .mgnb_close {
+  display: none;
+  width: 24px;
+  height: 24px;
+  font-size: 0;
+  border: 0;
+  cursor: pointer;
+}
+
+#header .mgnb_wrap {
+  display: none;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 88px;
+  background: #fff;
+  z-index: 2;
+}
+
+#header .mgnb_wrap .mgnb {
+  padding: 40px 0;
+  text-align: center;
+}
+
+#header .mgnb_wrap .mgnb li:not(:last-child) {
+  padding: 0 0 10px;
+}
+
+#header .mgnb_wrap .mgnb li a:hover {
+  color: var(--main-color);
+}
+
+#header .mgnb_dim {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 88px;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width:800px) {
+  #header {
+    height: 88px;
+  }
+
+  #header h1 a {
+    width: 125px;
+    height: 40px;
+  }
+
+  #header .gnb {
+    display: none;
+  }
+
+  .gnb_sns {
+    display: none;
+  }
+
+  #header .util {
+    display: block;
+  }
+}
+
+@media (max-width:400px) {
+  #header {
+    height: 63px;
+    padding: 16px;
+  }
+
+  #header h1 a {
+    width: 75px;
+    height: 24px;
+  }
+
+  #header .btn_ham {
+    width: 20px;
+    height: 20px;
+  }
+
+  #header .mgnb_wrap {
+    top: 63px;
+  }
+}
+
+/* footer */
+footer {
+  padding: 80px;
+  background-color: #fff;
+}
+
+footer .footer_sns {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .footer_sns ul {
+  gap: 20px;
+}
+
+footer .footer_sns ul li {
+  width: 50px;
+  height: 50px;
+}
+
+footer .footer_sns ul li:first-child:hover a img {
+  content: url('../img/main/icon_insta_hover.png');
+}
+
+footer .footer_sns ul li:nth-child(2):hover a img {
+  content: url('../img/main/icon_youtube_hover.png');
+}
+
+footer .footer_sns ul li:last-child:hover a img {
+  content: url('../img/main/icon_facebook_hover.png');
+}
+
+footer .footer_sns ul li a img {
+  width: 100%;
+  height: 100%;
+}
+
+footer h2 img {
+  width: 139px;
+  height: 47px;
+}
+
+footer ul {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #333;
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+footer ul li:last-child a {
+  color: var(--main-color);
+}
+
+.copy {
+  color: #585858;
+}
+
+.copy a {
+  color: #000;
+  transition: all 0.5s;
+}
+
+.copy a:hover {
+  color: #FF7500;
+}
+
+@media(max-width:900px) {
+  #footer {
+    padding: 60px 24px;
+  }
+}
+
+@media(max-width:600px) {
+  footer h2 {
+    margin-bottom: 20px;
+  }
+
+  footer ul {
+    gap: 20px;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+  }
+
+  footer .footer_sns {
+    display: block;
+  }
+
+  footer .copy {
+    font-size: 1.4rem;
+  }
+}
+
+
+@media(max-width:540px) {
+  footer ul {
+    font-size: 1.4rem;
+  }
+
+  footer .copy {
+    font-size: 1.2rem;
+  }
+}
+
+@media(max-width:460px) {
+  #footer {
+    padding: 60px 16px;
+  }
+
+  footer ul {
+    gap: 16px;
+    font-size: 1.2rem;
+  }
+
+  #footer .inner .copy a {
+    display: block;
+  }
+}
+
+/* gotop 버튼*/
+.gotop {
+  position: fixed;
+  right: 1.5vw;
+  bottom: 10vh;
+  display: none;
+  width: 70px;
+  height: 70px;
+  background: var(--main-color);
+  border-radius: 50%;
+  font-size: 0;
+  cursor: pointer;
+}
